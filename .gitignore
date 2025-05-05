@@ -1,0 +1,16 @@
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+shelf/
+workspace.xml
+
+target/
+build/
+out/
+dependency-reduced-pom.xml
+
+.DS_Store
+Thumbs.db
+
