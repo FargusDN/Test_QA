@@ -22,8 +22,6 @@
 
   <dependencies>
 
-
-    <!-- JUnit 5 API - основной модуль для написания тестов -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -31,7 +29,6 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- JUnit 5 Engine - движок для выполнения тестов -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
@@ -39,7 +36,6 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- JUnit 5 Params - поддержка параметризованных тестов -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
@@ -54,8 +50,6 @@
       <scope>test</scope>
     </dependency>
 
-
-    <!-- WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
@@ -64,16 +58,13 @@
     </dependency>
   </dependencies>
 
-
   <build>
     <plugins>
-      <!-- Плагин для запуска тестов (JUnit 5) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.3</version> <!-- или новее -->
+        <version>3.2.3</version>
         <configuration>
-          <!-- Для корректного обнаружения тестов JUnit 5 -->
           <includes>
             <include>**/*TestAuthorization.java</include>
 
